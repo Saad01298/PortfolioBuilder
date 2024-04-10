@@ -1,4 +1,4 @@
-In this project we are trying to create a Portfolio Builder Web App.
+**In this project we are trying to create a Portfolio Builder Web App.**
 
 Technologies used:
 
