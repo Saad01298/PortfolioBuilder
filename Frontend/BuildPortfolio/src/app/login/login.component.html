@@ -1,0 +1,18 @@
+<div class="outer-div">
+  <h1 class="header">Portfolio Builder</h1>
+  <div class="inner-div">
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="form-box">
+      <h1>Login</h1>
+      <input type="text" formControlName="username" placeholder="Username">
+      <input type="password" formControlName="password" placeholder="Password">
+      <input type="password" formControlName="confirmPassword" placeholder="Confirm Password">
+      <button type="submit" class="submitButton">Login</button>
+      <a routerLink="/main">Download Without Login</a>
+      <!-- <button type="submit" class="submitButton" [disabled]="loginForm.invalid">Login</button> -->
+      <!-- <div>
+        <button (click)="OAuth2('google')" class="submitButton">Google</button>
+        <button (click)="OAuth2('linkedIn')" class="submitButton">LinkedIn</button>
+      </div> -->
+    </form>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+.outer-div {
+    display: flex;
+    margin: 30px auto 32px;
+    padding: 0 16px;
+    max-width: 1600px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    font-size: 45px;
+    text-align: center;
+}
+
+.inner-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+/* below card-css will be inside form-div css */
+.form-box { 
+    all: unset;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: auto;
+    width: auto;
+    margin: 0 8px 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+
+input:hover {
+  opacity: 1;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #27b3ef;
+    color: white;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #149bd4;
+}
+
+.submitButton:disabled,
+.submitButton[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+@media screen and (max-width: 767) {
+    .form-box {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 575px) {}
