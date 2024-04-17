@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { DynamicPortfolioComponent } from './dynamic-portfolio/dynamic-portfolio.component';
 import { BuildPortfolioComponent } from './build-portfolio/build-portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     MainComponent,
     DynamicPortfolioComponent,
-    BuildPortfolioComponent
+    BuildPortfolioComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

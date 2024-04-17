@@ -1,0 +1,77 @@
+.outer-div {
+    display: flex;
+    margin: 30px auto 32px;
+    padding: 0 16px;
+    max-width: 1400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    margin-top: 45px;
+    font-size: 40px;
+} 
+
+.inner-div {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    top: 45%;
+    overflow: auto;
+    align-items: center;
+}
+
+.section-button {
+    width: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    margin: 7px 7px;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #27b3ef;
+    color: white;
+    cursor: pointer;
+}
+
+.section-button:hover {
+    background-color: #149bd4;
+}
+
+.section-button:disabled,
+.section-button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+@media screen and (max-width: 575px) {
+    .inner-div {
+        justify-content: center;
+        top: 40%;
+    }
+
+    .section-button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 575px) {
+    .inner-div {
+        justify-content: center;
+        top: 40%;
+    }
+
+    .section-button {
+        width: 85%;
+    }
+}
