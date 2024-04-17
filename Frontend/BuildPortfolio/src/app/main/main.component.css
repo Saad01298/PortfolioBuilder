@@ -5,4 +5,25 @@
     z-index:1;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
     height: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tags {
+    margin: 10px;
+    color: rgb(38, 144, 168);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 340px) {
+    
 }
