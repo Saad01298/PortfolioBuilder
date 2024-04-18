@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { DynamicPortfolioComponent } from './dynamic-portfolio/dynamic-portfolio.component';
-import { BuildPortfolioComponent } from './build-portfolio/build-portfolio.component';
 import { AuthGuard } from './auth.guard';
 import { SectionsComponent } from './sections/sections.component';
+import { BuildPersonalPortfolioComponent } from './build-personal-portfolio/build-personal-portfolio.component';
+import { BuildBusinessPortfolioComponent } from './build-business-portfolio/build-business-portfolio.component';
 
 const routes: Routes = [
   {path: 'portfolio/:id', component: DynamicPortfolioComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
     canActivateChild: [AuthGuard],
     children: [
       {path: '', pathMatch: 'full', component: SectionsComponent},
-      {path: 'buildPortfolio', component: BuildPortfolioComponent}
+      {path: 'buildPersonalPortfolio', pathMatch: 'full', component: BuildPersonalPortfolioComponent},
+      {path: 'buildBusinessPortfolio', pathMatch: 'full', component: BuildBusinessPortfolioComponent}
     ]
   },
   
