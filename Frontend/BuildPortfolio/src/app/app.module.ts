@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SectionsComponent } from './sections/sections.component';
 import { BuildPersonalPortfolioComponent } from './build-personal-portfolio/build-personal-portfolio.component';
 import { BuildBusinessPortfolioComponent } from './build-business-portfolio/build-business-portfolio.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BuildBusinessPortfolioComponent } from './build-business-portfolio/buil
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
