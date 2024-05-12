@@ -15,16 +15,18 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class BuildPersonalPortfolioComponent implements OnInit, AfterViewInit {
 
+  optionalAndMandatorySections : any = ['Mandatory Details', 'Profile Photo', 'Contact Details', 'Primary Skills', 'Professional Experience', 'Projects', 'Achievements', 'Certifications', 'Education', 'Personal Details']
+  currentSections : any = ['Mandatory Details', 'Profile Photo', 'Contact Details', 'Primary Skills', 'Professional Experience', 'Projects', 'Achievements', 'Certifications', 'Education', 'Personal Details']
   modalVisible = true;
   expandCollapse : any = [];
   deleteSection : any = [];
   defaultButton = true;
 
   constructor() { 
-    for(let i = 2; i <= 10; i++)
+    for(let i = 1; i < 10; i++)
       this.deleteSection[i] = true;
 
-    for(let i = 1; i <= 10; i++)
+    for(let i = 0; i < 10; i++)
       this.expandCollapse[i] = false;
   }
 
@@ -45,7 +47,7 @@ export class BuildPersonalPortfolioComponent implements OnInit, AfterViewInit {
 
   open(val: number) {
     // close all
-    for(let i = 1; i <= 10; i++)
+    for(let i = 0; i < 10; i++)
       this.expandCollapse[i] = false;
 
     // open val
@@ -53,7 +55,8 @@ export class BuildPersonalPortfolioComponent implements OnInit, AfterViewInit {
   }
 
   deleteSec(val: number) {
-    // delete all data of val
+    console.log(val);
+    // delete all data of expandable div of section present in XYZ
     
     // delete val
     this.deleteSection[val] = false;
@@ -62,7 +65,7 @@ export class BuildPersonalPortfolioComponent implements OnInit, AfterViewInit {
   }
 
   addDefaultSections() {
-    for(let i = 2; i <= 10; i++)
+    for(let i = 1; i < 10; i++)
       this.deleteSection[i] = true;
 
     this.defaultButton = true;
